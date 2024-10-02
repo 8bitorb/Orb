@@ -14,7 +14,7 @@ Este projeto é open source, e contribuições são bem-vindas! Sinta-se à vont
 
 **Licença**
 Este projeto é licenciado sob a MIT License.
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 US **# Orb is a new social network that combines social interaction features, short videos and secure messaging in a decentralized ecosystem. As an open source project, Orb promotes user privacy and autonomy by operating autonomously and without the influence of controlling entities.**
 
 **Main Features:**
