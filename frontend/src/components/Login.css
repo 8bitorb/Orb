@@ -1,0 +1,146 @@
+/* src/components/login.css */
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000; /* Cor de fundo opcional */
+  background-image: radial-gradient(#000000, #2f2f2f);
+  background-size: 100% 300px;
+  background-position: 0% 100%;
+  animation: gradient-anim 10s infinite;
+}
+
+@keyframes gradient-anim {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+.login-container h1 {
+  margin-bottom: 20px;
+  color: #6a0dad; /* Cor roxa predominante */
+  font-size: 2.5rem;
+  text-shadow: 0px 0px 10px #6a0dad;
+}
+
+.login-button {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 0px 10px #6a0dad;
+}
+
+.login-button:hover {
+  background-color: #5a0cb8;
+}
+
+.orb-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: -1;
+}
+
+.orb-3d {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px #6a0dad;
+  animation: orb-3d-anim 5s infinite;
+  transform-style: preserve-3d;
+}
+
+.orb-3d .face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #6a0dad;
+  border-radius: 50%;
+  transform-origin: center;
+}
+
+.orb-3d .face:nth-child(1) {
+  transform: rotateX(0deg) rotateY(0deg);
+}
+
+.orb-3d .face:nth-child(2) {
+  transform: rotateX(90deg) rotateY(0deg);
+}
+
+.orb-3d .face:nth-child(3) {
+  transform: rotateX(0deg) rotateY(90deg);
+}
+
+.orb-3d .face:nth-child(4) {
+  transform: rotateX(90deg) rotateY(90deg);
+}
+
+.orb-3d .face:nth-child(5) {
+  transform: rotateX(0deg) rotateY(180deg);
+}
+
+.orb-3d .face:nth-child(6) {
+  transform: rotateX(90deg) rotateY(180deg);
+}
+
+@keyframes orb-3d-anim {
+  0% {
+    transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotateX(180deg) rotateY(180deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg);
+  }
+}
+
+.orb-3d .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #6a0dad;
+  border-radius: 50%;
+  transform: translateZ(0);
+}
+
+.orb-3d .layer:nth-child(1) {
+  transform: translateZ(100px);
+  background-color: #5a0cb8;
+}
+
+.orb-3d .layer:nth-child(2) {
+  transform: translateZ(50px);
+  background-color: #6a0dad;
+}
+
+.orb-3d .layer:nth-child(3) {
+  transform: translateZ(0);
+  background-color: #5a0cb8;
+}
